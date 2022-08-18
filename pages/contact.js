@@ -1,9 +1,12 @@
 import React from "react";
+import ContactForm from "../components/ContactForm";
+import Hero from "../components/Hero";
 
 function contact() {
 	return (
 		<div>
-			<h1>This is Contact Page</h1>
+			<Hero heading="Contact Me" message="Submit the form below for more work and quotes" />
+			<ContactForm />
 		</div>
 	);
 }

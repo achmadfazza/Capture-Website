@@ -4,7 +4,7 @@ import React from "react";
 function Portfolio() {
 	return (
 		<div className="max-w-[1240px] mx-auto py-16 text-center">
-			<h1 className="font-bold text-2xl p-4">Travel Photos</h1>
+			<h1 className="font-bold text-2xl p-4">Travel Photography</h1>
 			<div className="grid grid-rows-none md:grid-cols-5 p-4 gap-4">
 				<div className="w-full h-full col-span-2 md:col-span-3 sm:row-span-2">
 					<Image
