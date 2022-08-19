@@ -17,7 +17,6 @@ const Meta = () => (
 		<meta name="twitter:title" content={meta.title} />
 		<meta name="twitter:description" content={meta.ogDescription} />
 		<meta name="twitter:card" content="summary_large_image" />
-		<meta name="twitter:image:alt" content="Nitesh Seram's Portfolio" />
 		<meta name="keywords" content={meta.keywords}></meta>
 		<link rel="canonical" href={meta.url} />
 
