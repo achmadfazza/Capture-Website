@@ -11,7 +11,7 @@ function MyApp({ Component, pageProps }) {
 	const preloading = () => {
 		setTimeout(() => {
 			setLoading(false);
-		}, 1000);
+		}, 1500);
 	};
 
 	useEffect(() => {
