@@ -11,6 +11,7 @@ function Footer() {
 				<li>
 					<a
 						href="https://github.com"
+						aria-label="github"
 						target="_blank"
 						className="mr-4 hover:underline md:mr-6 pr-3 ">
 						<FaGithub size={25} />
@@ -19,6 +20,7 @@ function Footer() {
 				<li>
 					<a
 						href="https://facebook.com"
+						aria-label="facebook"
 						target="_blank"
 						className="mr-4  hover:underline md:mr-6 pr-3 ">
 						<FaFacebook size={25} />
@@ -27,6 +29,7 @@ function Footer() {
 				<li>
 					<a
 						href="https://instagram.com"
+						aria-label="instagram"
 						target="_blank"
 						className="mr-4 hover:underline md:mr-6 pr-3 ">
 						<FaInstagram size={25} />
@@ -35,6 +38,7 @@ function Footer() {
 				<li>
 					<a
 						href="https://twitter.com"
+						aria-label="twitter"
 						target="_blank"
 						className="mr-4 hover:underline md:mr-6 pr-3 ">
 						<FaTwitter size={25} />
