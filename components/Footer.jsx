@@ -3,7 +3,7 @@ import { FaGithub, FaFacebook, FaInstagram, FaTwitter } from "react-icons/fa";
 
 function Footer() {
 	return (
-		<footer className="p-4 bg-white rounded-lg shadow md:flex md:items-center md:justify-between md:p-6">
+		<footer className="p-4 bg-white rounded-lg shadow md:flex md:items-center md:justify-between md:p-6 fixed bottom-0">
 			<span className="text-sm text-gray-500 sm:text-center">
 				<a href="/">Capture&#174;</a>. All Rights Reserved.
 			</span>
