@@ -1,6 +1,5 @@
 import "../styles/globals.css";
 import Navigation from "../components/Navigation";
-import Footer from "../components/Footer";
 import Meta from "../components/Meta";
 import LoadingSpinner from "../components/LoadingSpinner";
 import { useEffect, useState } from "react";
