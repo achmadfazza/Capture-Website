@@ -1,10 +1,12 @@
 import "../styles/globals.css";
-import Navigation from "../components/Navigation";
 import Meta from "../components/Meta";
 import LoadingSpinner from "../components/LoadingSpinner";
 import { useEffect, useState } from "react";
+import * as gtag from "../lib/gtag";
+import { useRouter } from "next/router";
 
 function MyApp({ Component, pageProps }) {
+	const router = useRouter();
 	const [loading, setLoading] = useState(true);
 
 	const preloading = () => {
@@ -15,7 +17,15 @@ function MyApp({ Component, pageProps }) {
 
 	useEffect(() => {
 		preloading();
-	});
+
+		const handleRouteChange = (url) => {
+			gtag.preview(url);
+		};
+		router.events.on("routeChangeComplete", handleRouteChange);
+		return () => {
+			router.events.off("routeChangeComplete", handleRouteChange);
+		};
+	}, [router.events]);
 
 	return (
 		<>

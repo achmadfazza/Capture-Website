@@ -51,7 +51,7 @@ function Navigation() {
 				{/* Mobile Button */}
 				<div onClick={handleNav} className="block sm:hidden z-10">
 					{nav ? (
-						<AiOutlineClose size={20} style={{ color: `${textColor}` }} />
+						<AiOutlineClose size={20} style={{ color: "white" }} />
 					) : (
 						<AiOutlineMenu size={20} style={{ color: `${textColor}` }} />
 					)}
@@ -60,8 +60,8 @@ function Navigation() {
 				<div
 					className={
 						nav
-							? "sm:hidden absolute top-0 left-0 right-0 bottom-0 flex justify-center items-center w-full h-screen bg-black text-center ease-in duration-300"
-							: "sm:hidden absolute top-0 left-[-100%] right-0 bottom-0 flex justify-center items-center w-full h-screen bg-black text-center ease-in duration-300"
+							? "sm:hidden absolute top-0 left-0 right-0 bottom-0 flex justify-center items-center w-full h-screen bg-black/75 text-center ease-in duration-300"
+							: "sm:hidden absolute top-0 left-[-100%] right-0 bottom-0 flex justify-center items-center w-full h-screen bg-black/75 text-center ease-in duration-300"
 					}>
 					<ul>
 						<li onClick={handleNav} className="p-4 text-4xl hover:text-gray-500">
