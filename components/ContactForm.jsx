@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import LoadingSpinner from "./LoadingSpinner";
+import { ErrorMessage, SuccessMessage } from "./Message";
 
 function ContactForm() {
 	const [input, setInput] = useState({
@@ -48,7 +50,7 @@ function ContactForm() {
 			} catch (error) {
 				setForm({
 					state: "error",
-					message: "There is something wrong",
+					message: "Terdapat Kesalahan",
 				});
 			}
 		}
@@ -105,13 +107,16 @@ function ContactForm() {
 					className="border rounded-md shadow-lg p-3 w-full mt-2 font-bold text-xl">
 					Submit
 				</button>
-				{form.state === "loading" ? (
-					<div>Sending....</div>
-				) : form.state === "error" ? (
-					<div>{form.message}</div>
-				) : (
-					form.state === "success" && <div>Sent successfully</div>
-				)}
+				<div className="pt-4 text-bold">
+					{form.state === "loading" && <LoadingSpinner />}
+					{form.state === "error" ? (
+						<ErrorMessage>{form.message}</ErrorMessage>
+					) : form.state === "success" ? (
+						<SuccessMessage>{form.message}</SuccessMessage>
+					) : (
+						" "
+					)}
+				</div>
 			</form>
 		</div>
 	);
