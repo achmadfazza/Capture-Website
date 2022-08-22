@@ -1,7 +1,7 @@
 import "../styles/globals.css";
 import Meta from "../components/Meta";
 import LoadingSpinner from "../components/LoadingSpinner";
-import { useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 import * as gtag from "../lib/gtag";
 import { useRouter } from "next/router";
 
@@ -17,9 +17,8 @@ function MyApp({ Component, pageProps }) {
 
 	useEffect(() => {
 		preloading();
-
 		const handleRouteChange = (url) => {
-			gtag.preview(url);
+			gtag.pageview(url);
 		};
 		router.events.on("routeChangeComplete", handleRouteChange);
 		return () => {
