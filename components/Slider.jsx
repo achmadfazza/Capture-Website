@@ -1,5 +1,4 @@
 import React from "react";
-import { SliderData } from "./SliderData";
 import Image from "next/image";
 
 function Slider({ slides }) {
@@ -7,7 +6,7 @@ function Slider({ slides }) {
 		<div id="galery" className="max-w-[1240px] mx-auto mt-5">
 			<h1 className="text-4xl text-center text-black font-bold p-5">Gallery</h1>
 			<div className="text-center ">
-				{SliderData.map((slide, index) => {
+				{slides.map((slide, index) => {
 					return (
 						<div key={index}>
 							<Image
