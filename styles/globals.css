@@ -5,13 +5,6 @@
 html {
 	scroll-behavior: smooth;
 	font-family: "Raleway", sans-serif;
-	height: 100%;
-}
-
-.customfooter {
-	position: fixed;
-	height: 40px;
-	top: calc(100vh - 40px);
 }
 
 .custom-img {
